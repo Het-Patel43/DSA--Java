@@ -4,6 +4,7 @@ public class armstrong {
 
     public static void main(String[] java){
 
+        // Print Armstrong number ;
 
 // Scanner sc= new Scanner(System.in);
 // int a  = sc.nextInt();
