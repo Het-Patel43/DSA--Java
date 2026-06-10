@@ -58,9 +58,9 @@ for(int row = 0 ; row <arr.length ; row++){
 
 // using  tostring -->
 
-// for(int i = 0 ; i<arr.length ; i++){ // this is row
+// for(int row = 0 ; row<arr.length ; row++){ // this is row
 
-//     System.out.println(Arrays.toString(arr[i]));
+//     System.out.println(Arrays.toString(arr[row]));
 // }
 
 
