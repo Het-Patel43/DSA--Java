@@ -36,7 +36,10 @@ for(int i = 0 ; i<arr.length ; i++){
 
     System.out.println(max(arr));
 
+    System.out.println(Integer.MIN_VALUE); // min value of integer can hold 
 
+ 
+    System.out.println(Integer.MAX_VALUE);
 
 }
 
@@ -93,23 +96,45 @@ static int[] search1(int[][] arr , int target){
 
     static int max(int[][] arr ){
 
-    int max = arr[0][0] ;
+    int max = Integer.MIN_VALUE;
 
-    for(int i = 0 ; i<arr.length ; i++){
+//     for(int i = 0 ; i<arr.length ; i++){
 
-    for (int j = 0 ; j <arr[i].length ; j++){
+//     for (int j = 0 ; j <arr[i].length ; j++){
 
        
-if(max < arr[i][j]){
+// if(max < arr[i][j]){
 
-    max = arr[i][j];
-}
+//     max = arr[i][j];
+// }
         
 
-     }
-  }
-  return max ;
+//      }
+//   }
+
+
+
+
+
+
+
+// 2nd method  -->
+ 
+
+   for(int[] ints : arr) {
+
+for (int anint : ints){
+
+if(anint > max) {
+    max = anint ; 
+}      
+
+ 
     
 
 }
+}
+
+return max ;
+    }
 }
