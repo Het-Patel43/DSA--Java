@@ -28,18 +28,40 @@ for(int i = 0 ; i<arr.length ; i++){
     
    }
 
-   int target = 10 ; 
+   int target = 3 ; 
 
-   boolean ans = search(arr , target);
+//    int[] ans = search1(arr , target);
 
-   System.out.println(ans);
+   System.out.println(Arrays.toString(search1(arr,target)));
 
 
 
 }
 
 
-static boolean search(int[][] arr , int target){
+// static boolean search(int[][] arr , int target){
+
+    
+
+//     for(int i = 0 ; i<arr.length ; i++){
+
+//     for (int j = 0 ; j <arr[i].length ; j++){
+
+//        if(arr[i][j] == target){
+
+//          return true ;   
+//        }
+
+//      }
+//   }
+//   return false ;
+    
+
+// }
+
+
+
+static int[] search1(int[][] arr , int target){
 
     
 
@@ -49,12 +71,21 @@ static boolean search(int[][] arr , int target){
 
        if(arr[i][j] == target){
 
-         return true ;   
+         return new int[]{i , j} ;   /* int[] answer = {1, 1};
+                                            return answer;  */
+
+        
+        // new int[]{i , j} creates a new int which stores value of i and j
+
+        // do this if you want to get index ;
+
        }
 
      }
   }
-  return false ;
+
+  return new int[]{ -1 ,-1};  
+  
     
 
 }
