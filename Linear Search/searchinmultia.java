@@ -9,7 +9,7 @@ int[][] arr = new int[3][3];
 
 Scanner sc = new Scanner(System.in);
 
-
+System.out.println("Enter the element");
 
 for(int i = 0 ; i<arr.length ; i++){
 
@@ -33,6 +33,8 @@ for(int i = 0 ; i<arr.length ; i++){
 //    int[] ans = search1(arr , target);
 
    System.out.println(Arrays.toString(search1(arr,target)));
+
+    System.out.println(max(arr));
 
 
 
@@ -86,6 +88,27 @@ static int[] search1(int[][] arr , int target){
 
   return new int[]{ -1 ,-1};  
   
+    }
+
+
+    static int max(int[][] arr ){
+
+    int max = arr[0][0] ;
+
+    for(int i = 0 ; i<arr.length ; i++){
+
+    for (int j = 0 ; j <arr[i].length ; j++){
+
+       
+if(max < arr[i][j]){
+
+    max = arr[i][j];
+}
+        
+
+     }
+  }
+  return max ;
     
 
 }
