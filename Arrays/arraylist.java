@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 import java.util.ArrayList;
 
-
-public class arraylist {
+ public class arraylist {
     public static void main(String[] args){
 
         // Array is of fixed sized ;
@@ -46,22 +45,25 @@ for(int i = 0 ; i< 5 ;i++ ){
 // output -->
 
 for(int i = 0 ; i< 5 ;i++ ){
-    System.out.println(list.get(i));
+    System.out.println(list.get(i)); // pass index here , list[index] will not wrk here 
+    
+    // need to to list.get[index];
 }
-
 
 // or -->
 
-
 // System.out.println(list);
 
-
-
-
-
-
-
-
-    }
+sc.close();
+  }
     
 }
+/* 
+ 1. size is fixed internally
+ 
+ 2. Say ArraList fills by some amount  --> It will create a new Arraylist of double the size 
+ 
+3 . old elements are copied to new one --> old one is deleted
+
+
+ */
