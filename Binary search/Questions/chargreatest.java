@@ -14,24 +14,25 @@ static char search(char[] arr , char target){
 int start = 0; 
 int end = arr.length -1 ;
 
-if(target >= arr[end]){
-    return arr[start];
 
-
-}
 
 while(start<=end){
 int mid = start + (end -start)/2;
 
 
-    if(target >= arr[mid] ){
+    if(target > arr[mid] ){
         start = mid  +1;
     }
     
     
-    else  {
+    else if(target < arr[mid]) {
         end = mid -1 ;
     }
+    else{
+        start = mid + 1;
+    }
+
+    
 
 
 
@@ -40,7 +41,7 @@ int mid = start + (end -start)/2;
     
     
 }
-return arr[start];
+return arr[start % arr.length];
 
 }
 }
